@@ -14,7 +14,7 @@ class NewVisitorsTest(unittest.TestCase):
 
     def test_access_website_login_register(self):
         # User access website localhost/clockwise
-        self.browser.get('http://127.0.0.1:8000')
+        self.browser.get('http://127.0.0.1:8000/tasks/')
         # He notices the page title and header mention ClockWise
         self.assertIn('ClockWise', self.browser.title)
         self.fail('Finish the Test!')
